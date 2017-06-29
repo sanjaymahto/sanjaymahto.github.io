@@ -1,5 +1,5 @@
  // main document ready function to check if dom is loaded fully or not
-  $(document).ready(function() {
+ jQuery(document).ready(function() {
 
     function sendFormData(event){
 
@@ -15,12 +15,16 @@
                     console.log(response);
                     //alert("Data success");
                     $('form').remove();
-                    document.getElementById("mailSent").innerHTML= response.userMessage;
+                    document.getElementById("mailSent").innerHTML="Thank You!";
                 },
                 error : function(request,errorType,errorMessage){
                     console.log(request);
                     console.log(errorType);
-                    document.getElementById("mailSent").innerHTML= response.userMessage;
+                    console.log(errorMessage);
+                    document.getElementById("mailSent").innerHTML= "Thank you!";
+                    document.getElementById("contact-email").innerHTML= "  ";
+                    document.getElementById("contact-subject").innerHTML= "  ";
+                    document.getElementById("contact-message").innerHTML= "  ";
                 }
             }//end argument list 
 
