@@ -6,7 +6,7 @@
         // prevent the default behaviour of the form
         event.preventDefault();
         console.log($('form').serialize());
-        $.ajax('https://api.edwisor.com/api/v1/public/send/mail/mahto.sanjay41@gmail.com',{
+        $.ajax('http://ec2-52-221-220-203.ap-southeast-1.compute.amazonaws.com:3000/api/sendemail/',{
 
                 type:'POST',
                 data: $('form').serialize(),
