@@ -383,13 +383,13 @@
                     </h3>
                     <div class="contact-form">
                         <form role="form">
+                        <div class="form-group">
+                                <label class="sr-only" for="contact-name">Name</label>
+                                <input type="text" name="name" placeholder="Name..." class="contact-subject form-control" id="contact-subject" required="true" />
+                            </div>
                             <div class="form-group">
                                 <label class="sr-only" for="contact-email">Email</label>
                                 <input type="text" name="email" placeholder="Email..." class="contact-email form-control" id="contact-email" required="true" />
-                            </div>
-                            <div class="form-group">
-                                <label class="sr-only" for="contact-subject">Subject</label>
-                                <input type="text" name="subject" placeholder="Subject..." class="contact-subject form-control" id="contact-subject" required="true" />
                             </div>
                             <div class="form-group">
                                 <label class="sr-only" for="contact-message">Message</label>
@@ -446,7 +446,8 @@
         });
 
     </script>
-<!--Start of Tawk.to Script-->
+
+    <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
