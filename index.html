@@ -462,10 +462,9 @@
 
 <!-- Visitor Tracking Script -->
 <script type="text/javascript">
-    $(document).ready(function(){
         $.getJSON('https://ipapi.co/json/', function(data) {
         
-                fetch('https://spooky-skeleton-18727.herokuapp.com/visit', {
+                fetch(' https://spooky-skeleton-18727.herokuapp.com/visit', {
                     method: 'POST',
                     headers: {
                         'Access-Control-Allow-Origin':'*',
@@ -477,7 +476,6 @@
                     body: JSON.stringify(data, null, 2)
                 });
         });
-    });
 </script>
 
 <!--Start of Tawk.to Script-->
