@@ -46,18 +46,18 @@ jQuery(document).ready(function() {
     new WOW().init();
 });
 
-jQuery(window).load(function() {
+// jQuery(window).load(function() {
 	
-	/*
-		Loader
-	*/
-	$(".loader-img").fadeOut();
-	$(".loader").delay(1000).fadeOut("slow");
+// 	/*
+// 		Loader
+// 	*/
+// 	$(".loader-img").fadeOut();
+// 	$(".loader").delay(1000).fadeOut("slow");
 	
-	/*
-		Hidden images
-	*/
-	$(".testimonial-image img").attr("style", "width: auto !important; height: auto !important;");
+// 	/*
+// 		Hidden images
+// 	*/
+// 	$(".testimonial-image img").attr("style", "width: auto !important; height: auto !important;");
 	
-});
+// });
 
