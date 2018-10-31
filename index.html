@@ -443,8 +443,26 @@
 
 
     <!-- Javascript -->
+
+    <!-- Visitor Tracking Script -->
+<script type="text/javascript">
+    $.getJSON('https://ipapi.co/json/', function(data) {
+    
+            fetch(' https://spooky-skeleton-18727.herokuapp.com/visit', {
+                method: 'POST',
+                headers: {
+                    'Access-Control-Allow-Origin':'*',
+                    'Access-Control-Allow-Methods': 'GET, POST, PATCH, PUT, DELETE, OPTIONS',
+                    'Access-Control-Allow-Headers': 'Origin, Content-Type, X-Auth-Token',
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data, null, 2)
+            });
+    });
+</script>
+
     <script type="text/javascript" src="jquery.min.js"></script>
-    <script src="assets/js/jquery-1.11.1.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery.backstretch.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
@@ -460,23 +478,7 @@
 
     </script>
 
-<!-- Visitor Tracking Script -->
-<script type="text/javascript">
-        $.getJSON('https://ipapi.co/json/', function(data) {
-        
-                fetch(' https://spooky-skeleton-18727.herokuapp.com/visit', {
-                    method: 'POST',
-                    headers: {
-                        'Access-Control-Allow-Origin':'*',
-                        'Access-Control-Allow-Methods': 'GET, POST, PATCH, PUT, DELETE, OPTIONS',
-                        'Access-Control-Allow-Headers': 'Origin, Content-Type, X-Auth-Token',
-                        'Accept': 'application/json',
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify(data, null, 2)
-                });
-        });
-</script>
+
 
 <!--Start of Tawk.to Script-->
     <script type="text/javascript">
