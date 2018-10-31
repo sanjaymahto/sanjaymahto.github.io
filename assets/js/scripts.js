@@ -73,4 +73,4 @@ setTimeout(function() {
 	*/
 	$(".testimonial-image img").attr("style", "width: auto !important; height: auto !important;");
 
-}, 2000)
+}, 3000)
