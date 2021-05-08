@@ -56,6 +56,8 @@
                     <li><a class="scroll-link" href="#top-content">Top</a></li>
                     <li><a class="scroll-link" href="#services">About Me</a></li>
                     <li><a class="scroll-link" href="#portfolio">Works</a></li>
+                    <li><a href=javascript:downloadResume("./assets/Sanjay_Mahto_Resume.pdf","Resume_Sanjay_Mahto.pdf");>Resume</a>
+                    </li>
                     <li><a class="scroll-link" href="#footer">Hire Me!</a></li>
                 </ul>
                 <div class="navbar-text navbar-right">
@@ -475,6 +477,18 @@
                 body: JSON.stringify(data, null, 2)
             });
     });
+
+    function downloadResume(url, filename) {
+        fetch(url).then(function(t) {
+            return t.blob().then((b)=>{
+                var a = document.createElement("a");
+                a.href = URL.createObjectURL(b);
+                a.setAttribute("download", filename);
+                a.click();
+            }
+            );
+        });
+    }
 </script>
 
 
