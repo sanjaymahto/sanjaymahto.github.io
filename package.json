@@ -1,7 +1,7 @@
 {
   "name": "sanjaymahto.github.io",
   "version": "1.0.0",
-  "description": "PortFolio-Sanjay Mahto",
+  "description": "PortFolio - Sanjay Mahto",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -21,8 +21,5 @@
   "bugs": {
     "url": "https://github.com/sanjaymahto/sanjaymahto.github.io/issues"
   },
-  "homepage": "https://github.com/sanjaymahto/sanjaymahto.github.io#readme",
-  "dependencies": {
-    "http-server": "^0.11.1"
-  }
+  "homepage": "https://github.com/sanjaymahto/sanjaymahto.github.io#readme"
 }
